@@ -1,0 +1,23 @@
+main {
+  padding: 20px 30px;
+}
+
+.banner {
+  background-color: white;
+  height: 400px;
+  border-radius: 15px;
+  margin: 0 20px;
+}
+
+.menu {
+  margin: 0 20px;
+}
+
+.buttons {
+  margin: 0 20px;
+}
+
+.bottom-board {
+  margin: 0 20px;
+  display: flex;
+}
