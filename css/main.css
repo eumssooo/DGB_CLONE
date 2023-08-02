@@ -1,16 +1,50 @@
 main {
-  padding: 20px 30px;
+  padding: 25px 60px;
+}
+
+:root {
+  --main-border-radius: 25px;
+  --main-bg-color: #fff;
+  --main-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .banner {
-  background-color: white;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  position: relative;
   height: 400px;
-  border-radius: 15px;
-  margin: 0 20px;
 }
-
 .menu {
-  margin: 0 20px;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  height: 110px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li + li {
+  margin: 0 0 0 70px;
+}
+.menu button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu button:hover {
+  color: blue;
+  cursor: pointer;
 }
 
 .buttons {
