@@ -1,5 +1,12 @@
 main {
-  padding: 25px 60px;
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 1200px;
 }
 
 :root {
@@ -48,10 +55,76 @@ main {
 }
 
 .buttons {
-  margin: 0 20px;
+  height: 150px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.buttons ul {
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  width: 280px;
+  height: 150px;
+  border: none;
+}
+.buttons button:hover {
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttons li + li {
+  margin: 0 0 0 26px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  height: 290px;
 }
 
 .bottom-board {
-  margin: 0 20px;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  margin-right: 26px;
+  width: 680px;
+  height: 290px;
+}
+.bottom-app {
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  width: 494px;
+  padding-top: 50px;
+}
+.bottom-app__icons {
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.bottom-app__icons button {
+  background-color: var(--main-bg-color);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-app__icons button img {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--main-border-radius);
+  border: 1px solid #e1e1e1;
+  margin-bottom: 20px;
 }

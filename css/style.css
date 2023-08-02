@@ -1,7 +1,9 @@
 @import "reset.css";
 @import "main.css";
 @import "header.css";
+@import "footer.css";
 
 body {
   background-color: #f3f6f8;
+  overflow: scroll;
 }
