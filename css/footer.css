@@ -10,3 +10,16 @@ footer {
   width: 1200px;
   background-color: beige;
 }
+.footer-div ul {
+  display: flex;
+}
+
+.footer-div li + li {
+  margin: 0 0 0 10px;
+}
+
+.footer-link a {
+  color: #42464a;
+  text-decoration: none;
+  cursor: pointer;
+}
