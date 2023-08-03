@@ -12,6 +12,7 @@ section {
 :root {
   --main-border-radius: 25px;
   --main-bg-color: #fff;
+  --main-signature-color: #016dde;
   --main-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,21 +37,20 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 1200px;
 }
 .menu li {
   display: inline-block;
 }
-.menu li + li {
-  margin: 0 0 0 70px;
-}
+
 .menu button {
   border: none;
   background: none;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 600;
 }
 .menu button:hover {
-  color: blue;
+  color: var(--main-signature-color);
   cursor: pointer;
 }
 
@@ -74,15 +74,37 @@ section {
   width: 280px;
   height: 150px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .buttons button:hover {
-  background-color: blue;
+  background-color: var(--main-signature-color);
   color: #fff;
   cursor: pointer;
 }
 
 .buttons li + li {
   margin: 0 0 0 26px;
+}
+.buttons-button img {
+  width: 70px;
+}
+.buttons-button__info {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+.buttons-button__info div + div {
+  padding: 4px 0 0 0;
+}
+.buttons-button__title {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .bottom {
