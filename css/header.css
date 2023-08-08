@@ -15,7 +15,18 @@ header {
   min-height: 68px;
   background-color: beige;
   display: flex;
+  align-items: center;
 }
+.logoBtn {
+  border: none;
+  background: none;
+  width: 160px;
+}
+.logoBtn img {
+  object-fit: contain;
+  width: 150px;
+}
+
 .top-menu {
   width: 600px;
 }

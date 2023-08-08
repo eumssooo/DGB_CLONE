@@ -9,7 +9,8 @@
   <body>
     <header>
       <div class="inner">
-        <img src="assets/logo.jpg">
+        <button class="logoBtn"><img src="assets/logo.jpg" /></button>
+
         <nav class="top-menu">
           <ul>
             <li>개인뱅킹</li>
@@ -25,63 +26,75 @@
     <main>
       <section>
         <div class="banner">메인 배너</div>
-          <div class="menu">
-            <ul>
-              <li>
-                <button type="button">빠른 조회</button>
-              </li>
-              <li>
-                <button type="button">금융소비자/민원</button>
-              </li>
-              <li>
-                <button type="button">상품공시실</button>
-              </li>
-              <li>
-                <button type="button">행복파트너</button>
-              </li>
-              <li>
-                <button type="button">고객센터</button>
-              </li>
-            </ul>
+        <div class="menu">
+          <ul>
+            <li>
+              <button type="button">빠른 조회</button>
+            </li>
+            <li>
+              <button type="button">금융소비자/민원</button>
+            </li>
+            <li>
+              <button type="button">상품공시실</button>
+            </li>
+            <li>
+              <button type="button">행복파트너</button>
+            </li>
+            <li>
+              <button type="button">고객센터</button>
+            </li>
+          </ul>
+        </div>
+        <div class="buttons">
+          <ul>
+            <li>
+              <button type="button" class="buttons-button">
+                <img src="assets/photo.svg" />
+                <span class="buttons-button__info"
+                  ><div class="buttons-button__title">경매정보</div>
+                  <div>부동산 경매 정보</div></span
+                >
+              </button>
+            </li>
+            <li>
+              <button type="button" class="buttons-button">
+                <img src="assets/photo.svg" />
+                <span class="buttons-button__info"
+                  ><div class="buttons-button__title">생활정보</div>
+                  <div>더 나은 삶을 위한 정보</div></span
+                >
+              </button>
+            </li>
+            <li>
+              <button type="button" class="buttons-button">
+                <img src="assets/photo.svg" />
+                <span class="buttons-button__info"
+                  ><div class="buttons-button__title">제테크 정보</div>
+                  <div>DGB 모닝브리핑</div></span
+                >
+              </button>
+            </li>
+            <li>
+              <button type="button" class="buttons-button">
+                <img src="assets/photo.svg" />
+                <span class="buttons-button__info"
+                  ><div class="buttons-button__title">향토와 문화</div>
+                  <div>우리지역 이야기</div></span
+                >
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <div class="bottom-board">
+            <span>새소식</span><span>이벤트</span><span>더보기</span>
           </div>
-          <div class="buttons">
-            <ul>
-              <li>
-                <button type="button" class="buttons-button">
-                  <img src="assets/photo.svg">
-                  <span class="buttons-button__info"><div class="buttons-button__title">경매정보</div><div>부동산 경매 정보</div></span>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="buttons-button">
-                  <img src="assets/photo.svg">
-                  <span class="buttons-button__info"><div class="buttons-button__title">생활정보</div><div>더 나은 삶을 위한 정보</div></span>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="buttons-button">
-                  <img src="assets/photo.svg">
-                  <span class="buttons-button__info"><div class="buttons-button__title">제테크 정보</div><div>DGB 모닝브리핑</div></span>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="buttons-button">
-                  <img src="assets/photo.svg">
-                  <span class="buttons-button__info"><div class="buttons-button__title">향토와 문화</div><div>우리지역 이야기</div></span>
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="bottom">
-            <div class="bottom-board">
-              <span>새소식</span><span>이벤트</span><span>더보기</span>
-            </div>
-            <div class="bottom-app"><div>DGB대구은행 APP</div>
-              <div class="bottom-app__icons">
-                <button><img src="assets/photo.svg">iM뱅크</button>
-                <button><img src="assets/photo.svg">iM샵</button>
-                <button><img src="assets/photo.svg">DGB기업뱅킹</button>
-              </div>
+          <div class="bottom-app">
+            <div>DGB대구은행 APP</div>
+            <div class="bottom-app__icons">
+              <button><img src="assets/photo.svg" />iM뱅크</button>
+              <button><img src="assets/photo.svg" />iM샵</button>
+              <button><img src="assets/photo.svg" />DGB기업뱅킹</button>
             </div>
           </div>
         </div>
@@ -89,18 +102,61 @@
     </main>
 
     <footer>
-      <div class="footer-div">
-        <ul>
-          <li class="footer-link"><a href="#">개인정보처리방침</a></li>
-          <li class="footer-link"><a href="#">보호금융상품등록부</a></li>
-          <li class="footer-link"><a href="#">보안센터</a></li>
-          <li class="footer-link"><a href="#">보안프로그램</a></li>
-          <li class="footer-link"><a href="#">접근성설정</a></li>
-          <li class="footer-link"><a href="#">사고신고</a></li>
-          <li class="footer-link"><a href="#">연수원</a></li>
-          <li class="footer-link"><a href="#">영업점안내</a></li>
+      <div class="footer-firstDiv">
+        <ul class="footer-link__ul ul-left">
+          <li class="footer-link__li"><a href="#">개인정보처리방침</a></li>
+          <li class="footer-link__li"><a href="#">보호금융상품등록부</a></li>
+          <li class="footer-link__li"><a href="#">보안센터</a></li>
+          <li class="footer-link__li"><a href="#">보안프로그램</a></li>
+          <li class="footer-link__li"><a href="#">접근성설정</a></li>
+          <li class="footer-link__li"><a href="#">사고신고</a></li>
+          <li class="footer-link__li"><a href="#">연수원</a></li>
+          <li class="footer-link__li"><a href="#">영업점안내</a></li>
+        </ul>
+        <ul class="footer-link__ul ul-right">
+          <li class="footer-link__li li-right">
+            <!-- <div class="li_notClicked">
+              DGB SNS<img src="assets/chevron-down.svg" />
+            </div>
+            <div class="li_clicked">
+              <a href="#">유튜브</a><br />
+              <a href="#">네이버 블로그</a><br />
+              <a href="#">페이스북</a><br />
+              DGB SNS <img src="assets/chevron-up.svg" />
+            </div> -->
+            <label class="li-right__DGBSNS" for="DGBSNS-checkbox">
+              DGB SNS <img src="assets/chevron-down.svg" />
+            </label>
+            <input id="DGBSNS-checkbox" type="checkbox" />
+            <div class="li_clicked DGBSNS-checkbox__clicked">
+              <a href="#">유튜브</a><br />
+              <a href="#">네이버 블로그</a><br />
+              <a href="#">페이스북</a><br />
+              <label class="li-right__DGBSNS" for="DGBSNS-checkbox">
+                DGB SNS <img src="assets/chevron-up.svg" />
+              </label>
+            </div>
+          </li>
+          <li class="footer-link__li li-right">
+            <div class="li_notClicked">
+              DGB금융그룹 <img src="assets/chevron-down.svg" />
+            </div>
+            <div class="li_clicked">
+              DGB금융그룹 <img src="assets/chevron-up.svg" />
+            </div>
+          </li>
+          <li class="footer-link__li li-right">
+            <div class="li_notClicked">
+              DGB금융그룹 <img src="assets/chevron-down.svg" />
+            </div>
+            <div class="li_clicked">
+              DGB금융그룹 <img src="assets/chevron-up.svg" />
+            </div>
+          </li>
         </ul>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

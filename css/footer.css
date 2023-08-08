@@ -3,23 +3,79 @@ footer {
   display: flex;
   justify-content: center;
   height: 100px;
-  border-top: 1px solid #e1e1e1;
+  border-top: var(--footer-border);
 }
 
-.footer-div {
+:root {
+  --main-signature-color: #016dde;
+  --footer-font-color: #42464a;
+  --footer-font-weight: 450;
+  --footer-border: 1px solid #e1e1e1;
+  --main-border-radius: 25px;
+  --main-bg-color: #fff;
+}
+
+.footer-firstDiv {
   width: 1200px;
   background-color: beige;
+  display: flex;
+  position: relative;
 }
-.footer-div ul {
+.footer-link__ul {
   display: flex;
 }
 
-.footer-div li + li {
+.ul-left li + li {
   margin: 0 0 0 10px;
 }
 
-.footer-link a {
-  color: #42464a;
+.footer-link__li a {
+  color: var(--footer-font-color);
   text-decoration: none;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: var(--footer-font-weight);
+}
+
+.ul-right {
+  position: absolute;
+  right: 0;
+}
+.ul-right li + li {
+  margin: 0 0 0 10px;
+}
+
+.li-right {
+  font-size: 15px;
+  color: var(--footer-font-color);
+  font-weight: var(--footer-font-weight);
+  display: flex;
+  align-items: center;
+}
+
+.li-right img {
+  width: 17px;
+}
+
+.li_notClicked {
+  position: relative;
+}
+
+#DGBSNS-checkbox {
+  display: none;
+}
+.li_clicked {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  border: var(--footer-border);
+  border-radius: var(--main-border-radius);
+  bottom: -11px;
+  left: -11px;
+  padding: 10px;
+}
+
+#DGBSNS-checkbox:checked + .li_clicked {
+  display: flex;
+  flex-direction: column;
 }
